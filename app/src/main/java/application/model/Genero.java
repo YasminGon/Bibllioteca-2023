@@ -3,15 +3,15 @@ package application.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GeneratationType;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(nam="generos")
+@Table(name="generos")
 public class Genero {
     @Id 
-    @GeneratedValue(strategy=GeneratationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
     private String nome;
 
